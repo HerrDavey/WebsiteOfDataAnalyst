@@ -1,0 +1,42 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #1A4D2E;
+    height: 78.68px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 16px;
+    margin: 0;
+    overflow: hidden;
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #FCFCFC;
+    padding: 15px;
+    font-size: 30px;
+    font-family: "Source Serif 4", serif;
+    font-weight: medium;
+}
+
+
+.item3 {
+    margin-left: auto; 
+}
+
+.name {
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+}
