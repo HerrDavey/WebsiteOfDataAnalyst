@@ -33,10 +33,89 @@ body, html {
 
 .item3 {
     margin-left: auto; 
+    border-width: 3px;
+    border-color: #FCFCFC;
+    border-style: solid;
+    border-radius: 90px;
 }
 
 .name {
     font-size: 60px;
     margin: 0;
     padding: 0;
+}
+
+.job-title {
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+    color: #1A4D2E;
+}
+
+.split-section {
+    display: flex;
+}
+
+.text-section, .image-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.text-section {
+    margin: 20px;
+    padding: 20px;
+    font-family: "Inter";
+}
+
+.porfolio-button {
+    border: #D4C9AD;
+    background-color: #D4C9AD;
+    color: #FCFCFC;
+    font-family: "Source Serif 4", serif;
+    font-weight: 600;
+    border-radius: 90px;
+    height: 60px;
+    width: 250.45px;
+    font-size: 25px;
+    margin: 10px;
+}
+
+.short-description {
+    font-size: 30px;
+    font-family: "Inter";
+    font-weight: 600;
+    color: #5C5555;
+    margin: 10px;
+}
+
+.porfolio-section {
+    background-color: #F5EFE6;
+    display: flex;
+}
+
+.column {
+    float: left;
+    padding: 50px 70px ;
+    width: 33.33%;
+}
+
+.skill-description {
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 16px;
+    color: #000000;   
+}
+
+.label-portfolio {
+    margin-left: 77%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.grid-item {
+    padding: 20px;
+    text-align: center;
 }

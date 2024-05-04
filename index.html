@@ -5,6 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -16,52 +17,79 @@
         </ul>
     </nav>
 
-    <section class="introduction">
-        <div> 
+    <section class="split-section">
+        <div class="text-section"> 
             <h2 class="name">David Bakalarczyk</h2>
-            <h2 class="name">Junior Data Analyst</h2>
-            <p>Data Cleaning. Analytics. Visualisation.</p>
-            <p>Turning data chaos into strategic insights.</p>
-            <img /> << IMG >>
-            <button>See my Portfolio</button>
+            <h2 class="job-title">Junior Data Analyst</h2>
+            <p class="short-description">Data Cleaning. Analytics. Visualisation.</p>
+            <p class="short-description">Turning data chaos into strategic insights.</p>
+            <button class="porfolio-button">See My Portfolio</button>
+        </div>
+        <div class="image-section">
+            <img src="./static/laptop_image.png" 
+            alt="Picture of laptop with plots and charts"/> 
         </div>
     </section>
 
-    <section class="description">
-        <div> 
-            <h2 class="name">David Bakalarczyk</h2>
-            <h2 class="name">Junior Data Analyst</h2>
-            <p>Data Cleaning. Analytics. Visualisation.</p>
-            <p>Turning data chaos into strategic insights.</p>
-            <img /> << IMG >>
+    <section class="porfolio-section">
+
+        <div class="column">
+            <img src="./static/cleaning_image.png" alt="cleaning broom image" />        
+            <p class="short-description">Cleaning</p>
+            <p class="skill-description">
+                Skilled in effectively cleaning data, including duplicate removal, 
+                error correction, and missing value handling. Experienced in using Python's pandas
+                library for automated data cleaning processes, enhancing data quality for analysis 
+                and modeling.
+            </p>
         </div>
+
+        <div class="column">
+            <img src="./static/plot_image.png" alt="Image of analise on the plot"/> 
+            <p class="short-description">Analysis</p>
+            <p class="skill-description">
+                Proficient in conducting thorough analysis on cleaned datasets to extract 
+                valuable insights. Skilled in applying statistical methods and generating 
+                clear reports to communicate findings effectively to stakeholders.
+            </p>
+        </div>
+
+        <div class="column">
+            <img src="./static/chart_image.png" alt="Image of visualisation on the chart"/> 
+            <p class="short-description">Visualise</p>
+            <p class="skill-description">
+                Proficient in creating clear and compelling visualizations using tools 
+                like Matplotlib and Seaborn in Python to communicate complex data findings 
+                effectively.
+            </p>
+        </div>
+
     </section>
 
-    <section class="Porfolio">
-        <div> 
-            <h2 class="name">David Bakalarczyk</h2>
-            <h2 class="name">Junior Data Analyst</h2>
-            <p>Data Cleaning. Analytics. Visualisation.</p>
-            <p>Turning data chaos into strategic insights.</p>
-            <img /> << IMG >>
+    <section>
+        <div class="grid-container">
+            <div>
+                <h2 class="job-title label-portfolio">Portfolio</h2>
+            </div>
+            <div class="grid-item">
+                <img src="./static/graduation_image.png" alt="Graduation image with phrase:'My Bachelor's Thesis'"/>
+            </div>
+            <div class="grid-item">
+                <img src="./static//related_image.png" alt="Related Analysis Projects Image"/>
+            </div>
         </div>
+
     </section>
 
     <section class="Tool-Proficiency">
         <div> 
-            <h2 class="name">David Bakalarczyk</h2>
-            <h2 class="name">Junior Data Analyst</h2>
-            <p>Data Cleaning. Analytics. Visualisation.</p>
-            <p>Turning data chaos into strategic insights.</p>
-            <img /> << IMG >>
+            <hr style="width: 70%; margin-top: 15px;"/>
         </div>
     </section>
 
     <footer>
         <p>© 2024 David Bakalarczyk</p>
     </footer>
-
-
 
   </body>
 
