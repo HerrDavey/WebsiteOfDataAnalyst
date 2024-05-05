@@ -118,4 +118,47 @@ body, html {
 .grid-item {
     padding: 20px;
     text-align: center;
+    position: relative; 
+    display: inline-block;
+}
+
+.white-text {
+    position: absolute; 
+    top: 50%; 
+    left: 62.5%;
+    transform: translate(-50%, -50%); 
+    color: white;
+    padding: 10px;
+    font-size: 50px;
+    font-family: "Source Serif 4", serif;
+    font-weight: 600;
+}
+
+.white-text-1 {
+    position: absolute; 
+    top: 50%; 
+    left: 37%;
+    transform: translate(-50%, -50%); 
+    color: white;
+    padding: 10px;
+    font-size: 50px;
+    font-family: "Source Serif 4", serif;
+    font-weight: 600;
+}
+
+.grid-container-python {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin: 0px 200px;
+}
+
+.label-tool {
+    margin-left: 35%;
+}
+
+
+.footer {
+    height: 90px;
+    background-color: #F5EFE6;
 }
