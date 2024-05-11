@@ -54,6 +54,8 @@ body, html {
 
 /* NAVBAR SECTION END */
 
+/* INTRODUCTION SECTION START */ 
+
 .introduction-section {
     background-color: #FAF7F2;
     display: grid;
@@ -61,7 +63,7 @@ body, html {
     gap: 1.25rem;
     justify-items: stretch;
     align-items: center;
-    font-family: Inter;
+    font-family: "Inter";
 }
 
 .introduction-section div:nth-child(1) {
@@ -120,79 +122,52 @@ body, html {
     display: block;
 }
 
+/* INTRODUCTION SECTION END */ 
 
+/* SHORT DESRIBSTION START */
 
+.short-description-section {
 
-/* .name {
-    font-size: 60px;
-    margin: 0;
-    padding: 0;
-} */
+    background-color: #F5EFE6;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: stretch;
+    align-items: stretch;
+    padding-top: 1rem;
+    padding-left: 4rem;
+}
 
-/* .job-title {
-    font-size: 60px;
-    margin: 0;
-    padding: 0;
-    color: #1A4D2E;
-} */
+.short-description-section img {
+    max-width: 12%;
+    margin: auto;
+    display: block;
+    padding-right: 5rem;
+}
 
-/* .split-section {
-    display: flex;
-} */
-
-/* .text-section, .image-section {
-    flex: 1;
-    padding: 20px;
-} */
-
-/* .text-section {
-    margin: 20px;
-    padding: 20px;
-    font-family: "Inter";
-} */
-
-/* .porfolio-button {
-    border: #D4C9AD;
-    background-color: #D4C9AD;
-    color: #FCFCFC;
-    font-family: "Source Serif 4", serif;
-    font-weight: 600;
-    border-radius: 90px;
-    height: 60px;
-    width: 250.45px;
-    font-size: 25px;
-    margin: 10px;
-} */
-
-.short-description {
-    font-size: 30px;
+.short-description-section h3 {
+    font-size: 1.5rem;
     font-family: "Inter";
     font-weight: 600;
     color: #5C5555;
-    margin: 10px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    text-align: center;
+    padding-right: 5rem;
 }
 
-.porfolio-section {
-    background-color: #F5EFE6;
-    display: flex;
-}
-
-.column {
-    float: left;
-    padding: 50px 70px ;
-    width: 33.33%;
-}
-
-.skill-description {
+.short-description-section p {
     font-family: "Inter";
     font-weight: 600;
-    font-size: 16px;
-    color: #000000;   
+    font-size: 0.9rem;
+    color: #000000;
+    padding-right: 4rem; 
+    text-align: justify;  
 }
 
-.label-portfolio {
-    margin-left: 77%;
-}
+/* SHORT DESRIBSTION END */
+
+
 
 .grid-container {
     display: grid;
@@ -200,7 +175,7 @@ body, html {
 }
 
 .grid-item {
-    padding: 20px;
+    padding: 1.25rem;
     text-align: center;
     position: relative; 
     display: inline-block;
@@ -209,11 +184,11 @@ body, html {
 .white-text {
     position: absolute; 
     top: 50%; 
-    left: 62.5%;
+    left: 62.5%; 
     transform: translate(-50%, -50%); 
     color: white;
-    padding: 10px;
-    font-size: 50px;
+    padding: 0.625rem;
+    font-size: 3.125rem;
     font-family: "Source Serif 4", serif;
     font-weight: 600;
 }
@@ -221,11 +196,11 @@ body, html {
 .white-text-1 {
     position: absolute; 
     top: 50%; 
-    left: 37%;
+    left: 37%; 
     transform: translate(-50%, -50%); 
     color: white;
-    padding: 10px;
-    font-size: 50px;
+    padding: 0.625rem;
+    font-size: 3.125rem;
     font-family: "Source Serif 4", serif;
     font-weight: 600;
 }
@@ -234,35 +209,33 @@ body, html {
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    margin: 0px 200px;
+    margin: 0 12.5rem;
 }
 
 .label-tool {
-    margin-left: 35%;
+    margin-left: 2.1875rem;
 }
-
 
 .footer {
     background-color: #F5EFE6;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 0.1fr;
-    margin-top: 40px;
+    margin-top: 2.5rem;
 }
 
 .footer-item {
-    margin: 0 65%;
-    padding: 30px 10px 0 30px;
+    margin: 0 4.0625rem;
+    padding: 1.875rem 0.625rem 0 1.875rem;
 }
 
 .footer-label {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: "Source Serif 4", serif;
     -webkit-text-fill-color: gray; 
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
     font-weight: 600;
     grid-area: 2/5/3/6;
-    margin: 0px;
+    margin: 0;
 }
-
