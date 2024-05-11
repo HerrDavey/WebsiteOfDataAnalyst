@@ -168,20 +168,63 @@ body, html {
 /* SHORT DESRIBSTION END */
 
 
-
-.grid-container {
+.porfolio-section {
+    background-color: #FAF7F2;
     display: grid;
     grid-template-columns: auto;
+    padding-top: 1.5rem;
+    position: relative;
 }
 
-.grid-item {
+.porfolio-section h2 {
+    font-size: 2.1875rem;
+    padding-right: 9.5rem;
+    margin-bottom: 0;
+    color: #1A4D2E;
+    justify-content: stretch;
+    text-align: right;
+}
+
+.porfolio-section img {
+    width: 100%;
+    height: 18rem;
+    max-height: 100%;
+    max-width: 80%;
+    display: block;
+    margin:  0.5rem auto;
+}
+
+
+.porfolio-section h3 {
+    color: white;
+    font-size: 2.125rem;
+    font-family: "Source Serif 4", serif;
+    font-weight: 600;
+}
+
+
+.first-text {
+    position: absolute;
+    top: 29%; 
+    left: 65%; 
+    transform: translate(-50%, -50%);
+}
+
+.second-text {
+    position: absolute;
+    top: 75%; 
+    left: 38%; 
+    transform: translate(-50%, -50%);
+}
+
+/* .portfolio-item {
     padding: 1.25rem;
     text-align: center;
     position: relative; 
     display: inline-block;
-}
+} */
 
-.white-text {
+/* .white-text {
     position: absolute; 
     top: 50%; 
     left: 62.5%; 
@@ -191,7 +234,7 @@ body, html {
     font-size: 3.125rem;
     font-family: "Source Serif 4", serif;
     font-weight: 600;
-}
+} */
 
 .white-text-1 {
     position: absolute; 
