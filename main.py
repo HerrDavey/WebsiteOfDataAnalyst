@@ -3,7 +3,10 @@ from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import Integer, String
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
-
+from forms import SayHello
+import os
+from os.path import join, dirname
+from dotenv import load_dotenv
 
 #DATABASE DECLARETION
 class Base(DeclarativeBase):
@@ -11,11 +14,15 @@ class Base(DeclarativeBase):
 
 db = SQLAlchemy(model_class=Base)
 
+#ENV CONFIG
+dotenv_path = join(dirname(__file__), '.env')
+load_dotenv(dotenv_path)
 
 #APP AND SQL CONFIG
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///project.db'
 db.init_app(app)
+app.secret_key = os.environ.get('SECRET_KEY_FLASK')
 
 #DATABASE
 class User(db.Model):
@@ -35,9 +42,10 @@ def home():
 def about_me():
     return render_template('about_me.html')
 
-@app.route('/say_hello')
+@app.route('/say_hello', methods=["GET", "POST"])
 def say_hello():
-    return render_template('say_hello.html')
+    cform = SayHello()
+    return render_template('say_hello.html', form=cform)
 
 
 #INITIALISATION
