@@ -1,20 +1,6 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <link rel="stylesheet" href="./static/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-  </head>
+{% include "header.html" %}
 
-  <body>
-    <nav class="navbar">
-        <div><a href="{{ url_for('home') }}">HOME</a></div>
-        <div><a href="{{url_for('about_me')}}">ABOUT ME</a></div>
-        <div><a href="{{ url_for('say_hello') }}">SAY HELLO</a></div>
-    </nav>
-
+<!-- HEADER ABOVE -->
     <section class="introduction-section">
         <div> 
             <h2>David Bakalarczyk</h2>
@@ -119,18 +105,8 @@
             <p>Tabelau</p>
         </div>
     </section>
-
-    <footer class="footer">
-        <div class="tools-container">
-            <img src="./static/icon_gmail.png"/>
-            <img src="./static/icon_linkedin.png"/>
-            <img src="./static/icon_github.png"/>
-            <img src="./static/icon_discord.png"/>
-        </div>
-        <p>© 2024 David Bakalarczyk</p>
-
-    </footer>
-
+    
+    {% include 'footer.html' %}
   </body>
 
 </html>

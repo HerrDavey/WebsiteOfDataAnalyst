@@ -40,7 +40,6 @@ def say_hello():
     return render_template('say_hello.html')
 
 
-
 #INITIALISATION
 if __name__ == '__main__':
     app.run(debug=True)
