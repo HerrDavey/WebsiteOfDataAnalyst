@@ -10,9 +10,9 @@
 
   <body>
     <nav class="navbar">
-        <div><a href="">HOME</a></div>
-        <div><a href="">ABOUT ME</a></div>
-        <div><a href="">SAY HELLO</a></div>
+        <div><a href="{{ url_for('home') }}">HOME</a></div>
+        <div><a href="{{url_for('about_me')}}">ABOUT ME</a></div>
+        <div><a href="{{ url_for('say_hello') }}">SAY HELLO</a></div>
     </nav>
 
     <section class="introduction-section">
