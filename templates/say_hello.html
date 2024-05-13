@@ -1,10 +1,9 @@
 {% include 'header.html' %}
 
-<section>
-    <h1>Contact with us!</h1>
+<section class="contact-section">
+    <h1>GET IN TOUCH!</h1>
     <form method="POST" action="{{url_for('home')}}">
         {{form.csrf_token}}
-
         <p>
             {{form.name.label}}
             <br>
@@ -22,8 +21,7 @@
             <br>
             {{form.message}}
         </p>
-
-        {{form.submit}}
+        
+        {{form.submit(class="button_submit")}}
     </form>
 </section>
-{% include 'footer.html' %}

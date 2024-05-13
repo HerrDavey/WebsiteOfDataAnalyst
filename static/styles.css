@@ -8,6 +8,24 @@ body, html {
     font-size: 1rem;
 }
 
+/*SCROLLBAR SECTION START*/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #E7EEE8;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #94B397;
+    border-radius: 5px;
+}
+
+/*SCROLLBAR SECTION END*/
+
+
 /* NAVBAR SECTION START */
 
 .navbar {
@@ -293,3 +311,48 @@ body, html {
     font-family: "Source Serif 4", serif;
 }
 
+/* CONTACT SECTION START */
+
+.contact-section {
+    background-image: url(./contact_image.png);
+    background-color: #F5EFE6;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 105% 105%; 
+    position: relative;
+    height: 42.5rem;
+}
+
+.contact-section h1 {
+    margin: 0;
+    font-family: "Source Serif 4", serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: #FCFCFC;
+    letter-spacing: 0.35rem;
+
+}
+
+.contact-section p {
+    font-family: "Source Serif 4", serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #FCFCFC;
+}
+
+.button_submit {
+    border: 0.0625rem solid #4F6F52;
+    background-color: #4F6F52;
+    color: #FCFCFC;
+    font-family: nf;
+    font-weight: 600;
+    border-radius: 5.625rem;
+    height: 2.5rem;
+    width: 10.125rem;
+    font-size: 1.25rem;
+    margin-left: 0rem;
+    margin-top: 1.25rem;
+    align-content: center;
+}
+
+/* CONTACT SECTION END */ 
