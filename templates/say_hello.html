@@ -7,19 +7,19 @@
         <p>
             {{form.name.label}}
             <br>
-            {{form.name}}
+            {{form.name(class_="input_field")}}
         </p>
 
         <p>
             {{form.email.label}}
             <br>
-            {{form.email(size=30)}}
+            {{form.email(size=30, class_="input_field")}}
         </p>
 
         <p>
             {{form.message.label}}
             <br>
-            {{form.message}}
+            {{form.message(class_="input_field_message")}}
         </p>
         
         {{form.submit(class="button_submit")}}

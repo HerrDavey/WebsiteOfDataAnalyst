@@ -124,7 +124,7 @@ body, html {
     border: 0.0625rem solid #D4C9AD;
     background-color: #D4C9AD;
     color: #FCFCFC;
-    font-family: nf;
+    font-family: "Source Serif 4", serif;
     font-weight: 600;
     border-radius: 5.625rem;
     height: 2.5rem;
@@ -318,9 +318,11 @@ body, html {
     background-color: #F5EFE6;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 105% 105%; 
+    background-size: 100% 100%; 
     position: relative;
-    height: 42.5rem;
+    height: auto;
+    padding: 6rem;
+    padding-left: 9.5rem;
 }
 
 .contact-section h1 {
@@ -329,7 +331,7 @@ body, html {
     font-weight: 500;
     font-size: 2.5rem;
     color: #FCFCFC;
-    letter-spacing: 0.35rem;
+    letter-spacing: 0.3rem;
 
 }
 
@@ -344,7 +346,7 @@ body, html {
     border: 0.0625rem solid #4F6F52;
     background-color: #4F6F52;
     color: #FCFCFC;
-    font-family: nf;
+    font-family: "Source Serif 4", serif;
     font-weight: 600;
     border-radius: 5.625rem;
     height: 2.5rem;
@@ -355,4 +357,26 @@ body, html {
     align-content: center;
 }
 
+
+.input_field {
+    width: 40rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    font-family: "Inter";
+    border: 1px solid #ccc;
+    background-color: #FCFCFC;
+}
+
+
+.input_field_message {
+    width: 39.5rem;
+    height: 12rem;
+    font-size: 1rem;
+    font-family: "Inter";
+    border: 1px solid #ccc;
+    background-color: #FCFCFC;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+    resize: none;
+}
 /* CONTACT SECTION END */ 
