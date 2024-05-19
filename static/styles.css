@@ -380,3 +380,23 @@ body, html {
     resize: none;
 }
 /* CONTACT SECTION END */ 
+
+/* ABOUT ME START */
+.about_me_container {
+    background-color: #FAF7F2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.about_me_image {
+    display: flex;
+    justify-content: center;
+    padding-right: 1.2rem;
+    padding-top: 0.5rem;
+    max-width:1rem;
+    margin: 0 auto;
+}
+
+/* ABOUT ME END */

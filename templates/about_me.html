@@ -1,2 +1,40 @@
-{% include 'header.html' %}
-{% include 'footer.html' %}
+<head>
+    <link rel="stylesheet" href="./static/styles.css">
+</head>
+
+<section class="about_me_container">
+    <div class="about_me_image">
+        <img src="/static/my_photo.png" alt="Picture showing the author of website who is sitting in cafe."/>
+    </div>
+    <div>
+        <h2>David Bakalarczyk</h2>
+        <h3>Data Analyst | Python Developer</h3>
+        <p>Hello, my name is David! </p>
+        <p>
+           I'm a recent graduate in Computer Science and Econometrics with a passion for data analysis, 
+           Python development, and data visualization. Proficient in Python, HTML, and CSS, I excel in 
+           cleaning and visualizing data. Currently seeking internship opportunities to kickstart my career.
+        </p>
+        <p>When I'm not working</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus tincidunt turpis id dapibus. 
+            Nam quis lorem quis massa finibus aliquet ac vel urna. Maecenas quam metus, volutpat vitae mi eu, 
+            suscipit interdum tortor. Nunc efficitur blandit varius.
+         </p>
+         <p>#webdevelopment</p>
+         <p>#dataanalyst</p>
+         <p>#worklifebalance</p>
+         <p>#student</p>
+         <p>#traveller</p>
+         <h4>Education</h4>
+         <p>AGH University of Science and Technology</p>
+         <h4>Work</h4>
+         <p>GXO Logistic Nieuwegein</p>
+         <img src="/static/github-svg-black.png" alt="Black icon of github" />
+         <img src="/static/linkedin-svg-black.png" alt="Black icon of linkedin" />
+         <img src="/static/gmail-svg-black.png" alt="Black icon of Gmail" />
+         <a href="{{url_for('home')}}" class="button">Home</a>
+         <a href="{{url_for('say_hello')}}" class="button">Contact</a>
+    </div>
+
+</section>
