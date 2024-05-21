@@ -1,12 +1,16 @@
 <head>
     <link rel="stylesheet" href="./static/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <section class="about_me_container">
     <div class="about_me_image">
         <img src="/static/my_photo.png" alt="Picture showing the author of website who is sitting in cafe."/>
     </div>
-    <div>
+    <div class="about_me_description">
         <h2>David Bakalarczyk</h2>
         <h3>Data Analyst | Python Developer</h3>
         <p>Hello, my name is David! </p>
@@ -21,20 +25,28 @@
             Nam quis lorem quis massa finibus aliquet ac vel urna. Maecenas quam metus, volutpat vitae mi eu, 
             suscipit interdum tortor. Nunc efficitur blandit varius.
          </p>
-         <p>#webdevelopment</p>
-         <p>#dataanalyst</p>
-         <p>#worklifebalance</p>
-         <p>#student</p>
-         <p>#traveller</p>
+         <div class="hasztag_container">
+            <p class="about_me_hasztag">#webdevelopment</p>
+            <p class="about_me_hasztag">#dataanalyst</p>
+            <p class="about_me_hasztag">#worklifebalance</p>
+            <p class="about_me_hasztag">#student</p>
+            <p class="about_me_hasztag">#traveller</p>
+         </div>
          <h4>Education</h4>
          <p>AGH University of Science and Technology</p>
          <h4>Work</h4>
          <p>GXO Logistic Nieuwegein</p>
-         <img src="/static/github-svg-black.png" alt="Black icon of github" />
-         <img src="/static/linkedin-svg-black.png" alt="Black icon of linkedin" />
-         <img src="/static/gmail-svg-black.png" alt="Black icon of Gmail" />
-         <a href="{{url_for('home')}}" class="button">Home</a>
-         <a href="{{url_for('say_hello')}}" class="button">Contact</a>
+         <div>
+            <img src="/static/github-svg-black.png" alt="Black icon of github" />
+            <img src="/static/linkedin-svg-black.png" alt="Black icon of linkedin" />
+            <img src="/static/gmail-svg-black.png" alt="Black icon of Gmail" />
+         </div>
+         
+         <div>
+            <a href="{{url_for('home')}}" class="button">Home</a>
+            <a href="{{url_for('say_hello')}}" class="button">Contact</a>
+         </div>
+
     </div>
 
 </section>

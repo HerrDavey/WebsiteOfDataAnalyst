@@ -383,7 +383,7 @@ body, html {
 
 /* ABOUT ME START */
 .about_me_container {
-    background-color: #FAF7F2;
+    background-color: #FFF9EB;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: stretch;
@@ -398,5 +398,85 @@ body, html {
     max-width:1rem;
     margin: 0 auto;
 }
+
+.about_me_description h2 {
+    font-size: 2.5rem;
+    font-family: "Inter";
+    margin: auto;
+    padding-top: 3rem;
+    font-weight: 600;
+    letter-spacing: 0.02rem;
+}
+
+.about_me_description h3 {
+    text-align: right;
+    font-size: 1.6rem;
+    font-family: "Inter";
+    color: #5C5555;
+    margin: auto;
+    padding-top: 0.5rem;
+    padding-right: 5rem;
+    padding-bottom: 1.5rem;
+    letter-spacing: 0.12rem;
+}
+
+.about_me_description p {
+    font-family: "Inter";
+    font-size: 1rem;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-right: 5rem;
+
+}
+
+.about_me_description p:nth-of-type(1) {
+    text-align: left;
+}
+
+.about_me_description p:nth-of-type(3) {
+    text-align: right;
+    padding-right: 5rem;
+    padding-top: 1.5rem;
+}
+
+.about_me_description p:nth-of-type(4) {
+    padding-bottom: 0;
+}
+
+.hasztag_container {
+    text-align: center;
+    margin-top: auto;
+
+}
+.about_me_hasztag {
+    display: inline-flex;
+    color: #705F5F;
+    margin: 0.5rem 1rem;
+}
+
+.about_me_description h4 {
+    font-family: "Inter";
+    font-size: 1.1rem;
+    font-weight: 650;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.about_me_description h4:nth-last-of-type(2) {
+    text-align: right;
+    padding-right: 5rem;
+}
+
+.about_me_description p:nth-last-of-type(2) {
+    text-align: right;
+    padding-top: 0;
+    margin-top: 0.5rem;
+}
+
+.about_me_description p:nth-last-of-type(1) {
+    padding-top: 0;
+    margin-top: 0.5rem;
+}
+
 
 /* ABOUT ME END */
