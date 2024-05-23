@@ -122,14 +122,14 @@ body, html {
 
 
 .introduction-section button {
-    border: 0.0625rem solid #D4C9AD;
-    background-color: #D4C9AD;
+    border: 0.0625rem solid #4F6F52;
+    background-color: #4F6F52;
     color: #FCFCFC;
     font-family: "Source Serif 4", serif;
-    font-weight: 600;
+    font-weight: 500;
     border-radius: 5.625rem;
     height: 2.5rem;
-    width: 10.125rem;
+    width: 12.125rem;
     font-size: 1.25rem;
     margin-left: 0rem;
     margin-top: 1.25rem;
@@ -147,7 +147,6 @@ body, html {
 /* SHORT DESRIBSTION START */
 
 .short-description-section {
-
     background-color: #F5EFE6;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -177,7 +176,7 @@ body, html {
 }
 
 .short-description-section p {
-    font-family: "Source Serif 4", serif;
+    font-family: "Inter";
     font-weight: 500;
     font-size: 0.9rem;
     color: black;
