@@ -7,8 +7,8 @@
 </head>
 
 <section class="about_me_container">
-    <div class="about_me_image">
-        <img src="/static/my_photo.png" alt="Picture showing the author of website who is sitting in cafe."/>
+    <div class="about_me_image_container">
+        <img class="about_me_image" src="/static/my_photo.jpg" alt="Picture showing the author of website who is sitting in cafe."/>
     </div>
     <div class="about_me_description">
         <h2>David Bakalarczyk</h2>
@@ -20,7 +20,7 @@
            cleaning and visualizing data. Currently seeking internship opportunities to kickstart my career.
         </p>
         <p>When I'm not working</p>
-        <p>
+        <p style="margin-bottom: 0px;">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus tincidunt turpis id dapibus. 
             Nam quis lorem quis massa finibus aliquet ac vel urna. Maecenas quam metus, volutpat vitae mi eu, 
             suscipit interdum tortor. Nunc efficitur blandit varius.
@@ -36,15 +36,21 @@
          <p>AGH University of Science and Technology</p>
          <h4>Work</h4>
          <p>GXO Logistic Nieuwegein</p>
-         <div>
-            <img src="/static/github-svg-black.png" alt="Black icon of github" />
-            <img src="/static/linkedin-svg-black.png" alt="Black icon of linkedin" />
-            <img src="/static/gmail-svg-black.png" alt="Black icon of Gmail" />
+         <div class="image_container_about_me">
+            <a href="https://github.com/herrdavey">
+               <img src="/static/github-svg-black.png" alt="Black icon of github" />
+            </a>
+            <a href="https://www.linkedin.com/in/david-bakalarczyk-04285b199/">
+               <img src="/static/linkedin-svg-black.png" alt="Black icon of linkedin"/>
+            </a>
+            <a href="mailto:david.bakalarczyk00@gmail.com">
+               <img src="/static/gmail-svg-black.png" alt="Black icon of Gmail" />
+            </a>
          </div>
-         
-         <div>
-            <a href="{{url_for('home')}}" class="button">Home</a>
-            <a href="{{url_for('say_hello')}}" class="button">Contact</a>
+
+         <div class="nav-buttons-about-me">
+            <a class="button_about_me" href="{{url_for('home')}}">Home</a>
+            <a class="button_about_me" href="{{url_for('say_hello')}}">Contact</a>
          </div>
 
     </div>
