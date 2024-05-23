@@ -177,10 +177,10 @@ body, html {
 }
 
 .short-description-section p {
-    font-family: "Inter";
-    font-weight: 600;
+    font-family: "Source Serif 4", serif;
+    font-weight: 500;
     font-size: 0.9rem;
-    color: #000000;
+    color: black;
     padding-right: 4rem; 
     text-align: justify;  
 }
@@ -254,7 +254,7 @@ body, html {
     width: 50%; 
     height: 0.07rem;
     background-color: #000000;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 .tools-section h2 {
@@ -267,24 +267,28 @@ body, html {
 
 .tools-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin: auto 10rem;
+    margin-top: auto;
+    text-align: center;
+}
 
+.tools-container div {
+    margin: 1rem 1rem;
+    text-align: center; 
 }
 
 .tools-container img {
-    max-width: 10%;
-    display: inline-block;
+    height: 60%;
+    width: 60%;
 }
 
 .tools-section p {
     color: #5C5555;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 600;
     font-family: "Inter";
     padding: auto;
-    margin-left: 2.3rem;
 }
 
 /* TOOL SECTION END */
