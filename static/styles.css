@@ -292,8 +292,6 @@ body, html {
 
 /* TOOL SECTION END */
 
-
-
 .footer {
     background-color: #F5EFE6;
 }
@@ -360,6 +358,7 @@ body, html {
     margin-left: 0rem;
     margin-top: 1.25rem;
     align-content: center;
+    cursor: pointer;
 }
 
 

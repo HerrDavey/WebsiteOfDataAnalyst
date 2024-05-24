@@ -1,5 +1,5 @@
 #IMPORTS 
-from flask import Flask, render_template, redirect, url_for
+from flask import Flask, render_template, redirect, url_for, request
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import Integer, String
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
@@ -7,7 +7,13 @@ from forms import SayHello
 import os
 from os.path import join, dirname
 from dotenv import load_dotenv
-import smtplib, ssl
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+
+#Email Data
+OWN_EMAIL = 'davidstester00001@gmail.com'
+OWN_EMAIL_PASSWORD = 'ulqf sclc adlv xhsz'
 
 #DATABASE DECLARETION
 class Base(DeclarativeBase):
@@ -46,22 +52,29 @@ def about_me():
 @app.route('/say_hello', methods=["GET", "POST"])
 def say_hello():
     cform = SayHello()
-
-    #Email send config
-    port = 465
-    smtp_server = "smtp.gmail.com"
-    receiver_email = "david.bakalarczyk00@gmail.com"  
-  
-    if cform.validate_on_submit():
+    #Email to do
+    if request.method == "POST":
         name_sender = cform.name.data
         email_sender = cform.email.data
         message_sender = cform.message.data
-
-        context = ssl.create_default_context()
-        with smtplib.SMTP_SSL(smtp_server, port=port, context=context) as server:
-            server.sendmail(email_sender, receiver_email, message_sender)
+        print(name_sender, email_sender, message_sender)
+        send_email(name_sender, email_sender, message_sender)
         return redirect(url_for('say_hello'))
     return render_template('say_hello.html', form=cform)
+
+def send_email(name, email, message):
+    email_message = MIMEMultipart()
+    email_message['From'] = OWN_EMAIL
+    email_message['To'] = OWN_EMAIL
+    email_message['Subject'] = 'New Message From Website'
+
+    body = f'Name: {name}\nEmail: {email}\nMessage: {message}'
+    email_message.attach(MIMEText(body, 'plain', 'utf-8'))
+
+    with smtplib.SMTP('smtp.gmail.com', 587) as connection:
+        connection.starttls()
+        connection.login(OWN_EMAIL, OWN_EMAIL_PASSWORD)
+        connection.sendmail(OWN_EMAIL, OWN_EMAIL, email_message.as_string())
 
 
 #INITIALISATION
