@@ -1,5 +1,6 @@
 #IMPORTS 
 from flask import Flask, render_template, redirect, url_for, request
+from flask import Flask, render_template, redirect, url_for, request
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import Integer, String
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
@@ -12,13 +13,9 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 #Email Data
-<<<<<<< HEAD
+
 OWN_EMAIL = os.environ.get('OWN_EMAIL')
 OWN_EMAIL_PASSWORD = os.environ.get('OWN_EMAIL_PASSWORD')
-=======
-OWN_EMAIL = 'davidstester00001@gmail.com'
-OWN_EMAIL_PASSWORD = 'ulqf sclc adlv xhsz'
->>>>>>> 76faa74bc3abe6955b21ddd2610eb17bbf93468a
 
 #DATABASE DECLARETION
 class Base(DeclarativeBase):
@@ -57,18 +54,27 @@ def about_me():
 @app.route('/say_hello', methods=["GET", "POST"])
 def say_hello():
     cform = SayHello()
-    #Email to do
     if request.method == "POST":
         name_sender = cform.name.data
         email_sender = cform.email.data
         message_sender = cform.message.data
-<<<<<<< HEAD
-=======
-        print(name_sender, email_sender, message_sender)
->>>>>>> 76faa74bc3abe6955b21ddd2610eb17bbf93468a
         send_email(name_sender, email_sender, message_sender)
         return redirect(url_for('say_hello'))
     return render_template('say_hello.html', form=cform)
+
+def send_email(name, email, message):
+    email_message = MIMEMultipart()
+    email_message['From'] = OWN_EMAIL
+    email_message['To'] = OWN_EMAIL
+    email_message['Subject'] = 'New Message From Website'
+
+    body = f'Name: {name}\nEmail: {email}\nMessage: {message}'
+    email_message.attach(MIMEText(body, 'plain', 'utf-8'))
+
+    with smtplib.SMTP('smtp.gmail.com', 587) as connection:
+        connection.starttls()
+        connection.login(OWN_EMAIL, OWN_EMAIL_PASSWORD)
+        connection.sendmail(OWN_EMAIL, OWN_EMAIL, email_message.as_string())
 
 def send_email(name, email, message):
     email_message = MIMEMultipart()
