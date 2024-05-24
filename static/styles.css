@@ -253,7 +253,7 @@ body, html {
     width: 50%; 
     height: 0.07rem;
     background-color: #000000;
-    margin-top: 2rem;
+    margin-top: 5rem;
 }
 
 .tools-section h2 {
@@ -298,8 +298,8 @@ body, html {
     background-color: #F5EFE6;
 }
 
-.footer img {
-    max-width: 3%;
+.footer a {
+    max-width: 3.5%;
     display: inline-block;
     margin: auto;
     padding-top: 0.75rem;

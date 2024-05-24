@@ -2,7 +2,7 @@
 
 <section class="contact-section">
     <h1>GET IN TOUCH!</h1>
-    <form method="POST" action="{{url_for('home')}}">
+    <form method="POST" action="{{ url_for('say_hello') }}">
         {{form.csrf_token}}
         <p>
             {{form.name.label}}
