@@ -12,8 +12,13 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 #Email Data
+<<<<<<< HEAD
 OWN_EMAIL = os.environ.get('OWN_EMAIL')
 OWN_EMAIL_PASSWORD = os.environ.get('OWN_EMAIL_PASSWORD')
+=======
+OWN_EMAIL = 'davidstester00001@gmail.com'
+OWN_EMAIL_PASSWORD = 'ulqf sclc adlv xhsz'
+>>>>>>> 76faa74bc3abe6955b21ddd2610eb17bbf93468a
 
 #DATABASE DECLARETION
 class Base(DeclarativeBase):
@@ -57,6 +62,10 @@ def say_hello():
         name_sender = cform.name.data
         email_sender = cform.email.data
         message_sender = cform.message.data
+<<<<<<< HEAD
+=======
+        print(name_sender, email_sender, message_sender)
+>>>>>>> 76faa74bc3abe6955b21ddd2610eb17bbf93468a
         send_email(name_sender, email_sender, message_sender)
         return redirect(url_for('say_hello'))
     return render_template('say_hello.html', form=cform)
