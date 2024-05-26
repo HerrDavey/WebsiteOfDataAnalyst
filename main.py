@@ -51,6 +51,10 @@ def home():
 def about_me():
     return render_template('about_me.html')
 
+@app.route('/my_bacheldor')
+def my_bacheldor():
+    return render_template('my_bacheldor.html')
+
 @app.route('/say_hello', methods=["GET", "POST"])
 def say_hello():
     cform = SayHello()
