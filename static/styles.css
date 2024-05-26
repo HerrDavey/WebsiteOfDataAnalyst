@@ -402,7 +402,7 @@ body, html {
 .about_me_image {
     max-width: 100%;
     width: 50rem;
-    height: 45rem;
+    height: 42rem;
     object-fit: cover;
     object-position: right; 
 }
@@ -417,7 +417,7 @@ body, html {
     font-size: 2.3rem;
     font-family: "Inter";
     margin: auto;
-    padding-top: 1.0rem;
+    padding-top: 0.5rem;
     font-weight: 600;
     letter-spacing: 0.02rem;
 }
@@ -436,7 +436,7 @@ body, html {
 
 .about_me_description p {
     font-family: "Inter";
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     text-align: justify;
     text-justify: inter-word;
     padding-right: 2rem;
@@ -452,7 +452,7 @@ body, html {
 .about_me_description p:nth-of-type(3) {
     text-align: left;
     padding-right: 2rem;
-    padding-top: 2rem;
+    padding-top: 0.5rem;
     font-weight: 600;
 }
 
@@ -500,7 +500,7 @@ body, html {
     display: flex;
     justify-content: center;
     gap: 5rem;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     height: 5%;
     margin: auto;
     
@@ -509,7 +509,7 @@ body, html {
 .nav-buttons-about-me {
     display: flex;
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     padding-bottom: 0.1rem;
     gap: 4rem;
 }
