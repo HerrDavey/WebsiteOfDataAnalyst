@@ -58,7 +58,7 @@ kaggle==1.5.16
 MarkupSafe==2.1.3
 matplotlib-inline==0.1.6
 mistune==3.0.2
-multidict @ file:///C:/Users/dawid/Downloads/multidict-6.0.2-py3-none-any.whl#sha256=38230961f3d29ac41ebf7aa7317aa3dedae7154b81a58ce884e50fed1f805f24
+multidict==6.0.2
 nbclient==0.9.0
 nbconvert==7.14.0
 nbformat==5.9.2
