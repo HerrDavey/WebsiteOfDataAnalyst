@@ -321,7 +321,7 @@ body, html {
     background-repeat: no-repeat;
     background-size: 100% 100%; 
     position: relative;
-    height: auto;
+    height: 80vh;
     padding: 6rem;
     padding-left: 9.5rem;
 }
@@ -388,7 +388,7 @@ body, html {
 .about_me_container {
     background-color: #FAF7F2;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 45% 55%;
     justify-content: stretch;
     align-items: stretch; 
 }
@@ -400,14 +400,13 @@ body, html {
 .about_me_image {
     max-width: 100%;
     width: 50rem;
-    height: 42rem;
+    height: 100vh;
     object-fit: cover;
-    object-position: right; 
 }
 
 .about_me_description {
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
     margin-top: 1rem;
 }
 
@@ -498,7 +497,7 @@ body, html {
     display: flex;
     justify-content: center;
     gap: 5rem;
-    padding-top: 0.5rem;
+    padding-top: 2rem;
     height: 5%;
     margin: auto;
     
@@ -507,7 +506,7 @@ body, html {
 .nav-buttons-about-me {
     display: flex;
     justify-content: center;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     padding-bottom: 0.1rem;
     gap: 4rem;
 }
