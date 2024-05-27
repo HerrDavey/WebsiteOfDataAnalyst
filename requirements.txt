@@ -5,4 +5,4 @@ Flask==2.3.2
 flask_sqlalchemy==3.1.1
 SQLAlchemy==2.0.25
 gunicorn==21.2.0
-
+email_validator==1.1.3

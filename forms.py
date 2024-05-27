@@ -1,7 +1,7 @@
 from flask_wtf import FlaskForm
-from wtforms import  StringField, SubmitField, TextAreaField
-from wtforms.validators import DataRequired, Email
-
+from wtforms import  StringField, SubmitField, TextAreaField, validators
+from wtforms.validators import DataRequired, Email, URL
+import email_validator
 
 class SayHello(FlaskForm): 
     name = StringField(label='Name', validators=[DataRequired()])
