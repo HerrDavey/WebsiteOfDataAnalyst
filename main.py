@@ -20,18 +20,9 @@ OWN_EMAIL_PASSWORD = os.environ.get('OWN_EMAIL_PASSWORD')
 #DATABASE DECLARETION
 # class Base(DeclarativeBase):
 #     pass
-
 # db = SQLAlchemy(model_class=Base)
-
-#ENV CONFIG
-dotenv_path = join(dirname(__file__), '.env')
-load_dotenv(dotenv_path)
-
-#APP AND SQL CONFIG
-app = Flask(__name__)
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///project.db'
 # db.init_app(app)
-app.secret_key = os.environ.get('SECRET_KEY_FLASK')
 
 # #DATABASE
 # class User(db.Model):
@@ -41,6 +32,15 @@ app.secret_key = os.environ.get('SECRET_KEY_FLASK')
 
 # with app.app_context():
 #     db.create_all()
+
+
+#ENV CONFIG
+dotenv_path = join(dirname(__file__), '.env')
+load_dotenv(dotenv_path)
+
+#APP AND SQL CONFIG
+app = Flask(__name__)
+app.secret_key = os.environ.get('SECRET_KEY_FLASK')
 
 #ROUTES
 @app.route('/')
@@ -97,4 +97,4 @@ def send_email(name, email, message):
 
 #INITIALISATION
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)

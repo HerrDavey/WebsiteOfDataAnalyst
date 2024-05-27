@@ -153,14 +153,13 @@ body, html {
     justify-items: stretch;
     align-items: stretch;
     padding-top: 1rem;
-    padding-left: 4rem;
+    padding-bottom: 1rem;
 }
 
 .short-description-section img {
     max-width: 12%;
     margin: auto;
     display: block;
-    padding-right: 5rem;
 }
 
 .short-description-section h3 {
@@ -172,7 +171,7 @@ body, html {
     margin-bottom: 0.5rem;
     display: block;
     text-align: center;
-    padding-right: 5rem;
+    padding-bottom: 0.5rem;
 }
 
 .short-description-section p {
@@ -180,7 +179,7 @@ body, html {
     font-weight: 500;
     font-size: 0.9rem;
     color: black;
-    padding-right: 4rem; 
+    margin: auto 3rem;
     text-align: justify;  
 }
 
@@ -198,7 +197,7 @@ body, html {
 
 .porfolio-section h2 {
     font-size: 2.1875rem;
-    padding-right: 9.5rem;
+    margin-right: 14.7rem;
     margin-bottom: 0;
     color: #1A4D2E;
     justify-content: stretch;
@@ -211,7 +210,7 @@ body, html {
     max-height: 100%;
     max-width: 80%;
     display: block;
-    margin:  0.5rem auto;
+    margin:  0.5rem 7.5rem;
 }
 
 .porfolio-section h3 {
