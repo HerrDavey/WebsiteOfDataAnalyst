@@ -83,6 +83,8 @@ body, html {
     justify-items: stretch;
     align-items: center;
     font-family: "Inter";
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .introduction-section div:nth-child(1) {
@@ -179,7 +181,7 @@ body, html {
     font-weight: 500;
     font-size: 0.9rem;
     color: black;
-    margin: auto 3rem;
+    margin: auto 2.5rem;
     text-align: justify;  
 }
 
@@ -295,7 +297,7 @@ body, html {
 }
 
 .footer a {
-    max-width: 3.5%;
+    max-width: 5%;
     display: inline-block;
     margin: auto;
     padding-top: 0.75rem;
@@ -310,7 +312,7 @@ body, html {
     text-align: center;
     font-weight: 400;
     font-family: "Source Serif 4", serif;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
 }
 
 /* CONTACT SECTION START */
@@ -320,11 +322,12 @@ body, html {
     background-color: #F5EFE6;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% 100%; 
+    background-size: 120% 100%; 
     position: relative;
-    height: 80vh;
-    padding: 6rem;
-    padding-left: 9.5rem;
+    height: 100vh;
+    padding-top: 5rem;
+    padding-left: 5rem;
+    text-align: left;
 }
 
 .contact-section h1 {
@@ -391,7 +394,7 @@ body, html {
     display: grid;
     grid-template-columns: 45% 55%;
     justify-content: stretch;
-    align-items: stretch; 
+    align-items: center; 
 }
 
 .about_me_image_container {
