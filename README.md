@@ -39,5 +39,14 @@ Created website shows an example of a website for a Data Analyst. This website c
 
 <p align="center">
 <b>Home</b>: <br/>
-<img src="https://i.imgur.com/1QkMeIO.png" height="80%" width="80%" alt="Text to Morse Code Conversion"/>
+<img src="https://i.imgur.com/2IUxCyi.png" height="80%" width="80%" alt="Picture of front page - introduction section"/>
+<img src="https://i.imgur.com/KCsNZKN.png" height="80%" width="80%" alt="Picture of front page - porfolio section"/>
+<img src="https://i.imgur.com/7gY05NM.png" height="80%" width="80%" alt="Picture of front page - tools section"/>
+  
 <br />
+<b>About Me</b>: <br/>
+<img src="https://i.imgur.com/M5yk2UI.png" height="80%" width="80%" alt="Picture of Data Analyst's Resume"/>
+
+<br />
+<b>Say Hello</b>: <br/>
+<img src="https://i.imgur.com/g7BIJPO.png" height="80%" width="80%" alt="Picture of Contact form"/>
